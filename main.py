@@ -29,4 +29,4 @@ uploaded_file = st.file_uploader("Upload some file")
 if uploaded_file is not None:
     for i, line in enumerate(
             uploaded_file.getvalue().decode('utf-8').splitlines()):
-        st.text(f"{i}. {line}")
+        st.text(f"{i}. {line}".rstrip())
